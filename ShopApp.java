@@ -19,7 +19,24 @@ public class ShopApp {
         // TODO code application logic here
         Customer c1 = new Customer();
         c1.name = "Pinky";
-        System.out.println("Customer is "+c1.name);
+        c1.size = "S";
+        
+        int measurement = 10;
+        switch (measurement) {
+            case 1: case 2: case 3: //can also use case 1, 2, 3:
+                c1.size = "S";
+                break;
+            case 4: case 5: case 6: //can also use case 4, 5, 6:
+                c1.size = "M";
+                break;
+            case 7: case 8: case 9: //can also use case 7, 8, 9:
+                c1.size = "L";
+                break;
+            default:
+                c1.size = "X";
+                break;
+        }
+        System.out.println("Customer is "+c1.name + "and is size: " + c1.size);
         
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
